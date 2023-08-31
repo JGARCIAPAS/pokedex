@@ -1,0 +1,93 @@
+/* colors */
+.pokedex {
+  background-color: rgb(255, 27, 27);
+  border-radius: 5px;
+}
+@media screen and (min-width: 710px) {
+  .pokedex {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+.pokedex .pokedex-header {
+  padding-top: 5px;
+}
+.pokedex .pokedex-header .header-top {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.pokedex .pokedex-header .header-top .big-light {
+  box-shadow: 0 0 20px 4px rgb(64, 111, 243);
+  display: inline-block;
+  margin: 2px 10px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(64, 111, 243);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  position: relative;
+}
+.pokedex .pokedex-header .header-top .big-light:after {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 14px;
+  border-radius: 100%;
+  top: 4px;
+  z-index: 1;
+  content: "";
+  height: 10px;
+  width: 10px;
+}
+.pokedex .pokedex-header .header-top .group-lights {
+  margin: 2px 10px;
+  display: inline-block;
+}
+.pokedex .pokedex-header .header-top .group-lights .red-light, .pokedex .pokedex-header .header-top .group-lights .yellow-light, .pokedex .pokedex-header .header-top .group-lights .green-light {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin: 0 2px;
+}
+.pokedex .pokedex-header .header-top .group-lights .red-light {
+  box-shadow: 0 0 20px 4px rgb(255, 110, 110);
+  background-color: rgb(255, 110, 110);
+}
+.pokedex .pokedex-header .header-top .group-lights .yellow-light {
+  box-shadow: 0 0 20px 4px rgb(255, 235, 90);
+  background-color: rgb(255, 235, 90);
+}
+.pokedex .pokedex-header .header-top .group-lights .green-light {
+  box-shadow: 0 0 20px 4px rgb(104, 247, 78);
+  background-color: rgb(104, 247, 78);
+}
+.pokedex .pokedex-header .header-bottom {
+  background-color: rgb(226, 0, 0);
+  height: 20px;
+  display: flex;
+}
+.pokedex .pokedex-header .header-bottom .header-bottom-left {
+  flex: 1;
+  background-color: rgb(255, 27, 27);
+}
+.pokedex .pokedex-header .header-bottom .header-bottom-center {
+  flex: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgb(255, 27, 27);
+  border-right: 149px solid transparent;
+}
+.pokedex .pokedex-header .header-bottom .header-bottom-right {
+  flex: 1;
+  background-color: rgb(226, 0, 0);
+}
+.pokedex .pokedex-body {
+  background-color: rgb(226, 0, 0);
+  height: 400px;
+}
+.pokedex .pokedex-footer {
+  height: 10px;
+  background-color: rgb(255, 27, 27);
+}/*# sourceMappingURL=pokedex.css.map */

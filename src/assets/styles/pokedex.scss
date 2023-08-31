@@ -1,0 +1,104 @@
+@import './responsive';
+@import './vars';
+
+.pokedex{
+    background-color: $pokedex_color;
+    border-radius: 5px;
+    @include desktop{
+        width: 700px;
+        margin:0 auto;
+    }
+    .pokedex-header{
+        padding-top:5px;
+        .header-top{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            .big-light{
+                -webkit-box-shadow:0 0 20px 4px $lights_blue;
+                -moz-box-shadow: 0 0 20px 4px $lights_blue;
+                box-shadow:0 0 20px 4px $lights_blue;
+                display:inline-block;
+                margin:2px 10px;
+                height:30px;
+                width:30px;
+                background-color:$lights_blue;
+                border:3px solid $lights_lighted_white;
+                border-radius: 100%;
+                position:relative;
+            }
+            .big-light:after {
+                background-color: $white;
+                position: absolute;
+                right: 14px;
+                border-radius: 100%;
+                top: 4px;
+                z-index: 1;
+                content: '';
+                height: 10px;
+                width: 10px;
+            }
+            .group-lights{
+                margin: 2px 10px;
+                display:inline-block;
+                .red-light, .yellow-light, .green-light{
+                    display:inline-block;
+                    border:1px solid $lights_lighted_white;
+                    height:10px;
+                    width:10px;
+                    border-radius:100%;
+                    margin: 0 2px;
+                }
+                .red-light{
+                    -webkit-box-shadow:0 0 20px 4px $lights_red;
+                    -moz-box-shadow: 0 0 20px 4px $lights_red;
+                    box-shadow:0 0 20px 4px $lights_red;
+                    background-color:$lights_red;
+                }
+                .yellow-light{
+                    -webkit-box-shadow:0 0 20px 4px $lights_yellow;
+                    -moz-box-shadow: 0 0 20px 4px $lights_yellow;
+                    box-shadow:0 0 20px 4px $lights_yellow;
+                    background-color:$lights_yellow;
+                }
+                .green-light{
+                    -webkit-box-shadow:0 0 20px 4px $lights_green;
+                    -moz-box-shadow: 0 0 20px 4px $lights_green;
+                    box-shadow:0 0 20px 4px $lights_green;
+                    background-color:$lights_green;
+                }
+            }
+        }
+        .header-bottom{
+            background-color:$pokedex_content_color;
+            height:20px;
+            display:flex;
+            .header-bottom-left{
+                flex:1;
+                background-color: $pokedex_color;
+            }
+            .header-bottom-center{
+                flex:0;
+                width: 0;
+                height: 0;
+                border-top: 20px solid $pokedex_color;
+                border-right: 149px solid transparent;
+            }
+            .header-bottom-right{
+                flex:1;
+                background-color: $pokedex_content_color;
+            }
+        }
+
+
+
+    }
+    .pokedex-body{
+        background-color: $pokedex_content_color;
+        height:400px;
+    }
+    .pokedex-footer{
+        height:10px;
+        background-color:$pokedex_color;
+    }
+}
