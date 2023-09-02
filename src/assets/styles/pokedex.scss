@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 @import './responsive';
 @import './vars';
 
 .pokedex{
     background-color: $pokedex_color;
-    border-radius: 5px;
+    border-radius: 10px;
     @include desktop{
         width: 700px;
         margin:0 auto;
@@ -89,16 +91,94 @@
                 background-color: $pokedex_content_color;
             }
         }
-
-
-
     }
     .pokedex-body{
         background-color: $pokedex_content_color;
-        height:400px;
+        padding: 10px 0px;
+        .buttons-zone, .top-btns{
+            display:flex;
+        }
+        .main-btns{
+            display:flex;
+            flex:2;
+        }
+        .middle-btns{
+            flex:5;
+            text-align:center;
+            .btn-berries{
+                button{
+                    background-color: $buttons_berrydex;
+                    border-color: $buttons_berrydex_shadow;
+                    border-radius: 15px;
+                }
+            }
+            .btn-pokemon{
+                button{
+                    background-color: $buttons_pokedex;
+                    border-color: $buttons_pokedex_shadow;
+                    border-radius: 15px;
+                }
+            }
+            .btn-pokemon, .btn-berries{
+                flex:1;
+                button{
+                    width:50%;
+                    cursor:pointer;   
+                }
+                p{
+                    font-family: 'VT323', monospace;
+                    margin: 0;
+                }
+            }
+        }
+        .right-btns, .turn-btn{
+            flex:1;
+        }
+        .turn-btn {
+            text-align: center;
+            position: relative;
+            button{
+                background-color: $black;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                cursor:pointer;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                .power-off{
+                    color: $lights_lighted_white;
+                }
+            }
+        }
+        .mini-screen{
+            div{
+                background-color: #00c30f;
+                border-radius: 5px;
+                margin: 30px auto;
+                width: 52%;
+            }
+            .blink{
+                animation: blinker 1s linear infinite;
+                font-family: 'VT323', monospace;
+                padding: 15px 0px;
+            }
+            .ink-text {
+                margin: 0;
+            }
+            @keyframes blinker {
+                50% {
+                  opacity: 0;
+                }
+              }
+        }
+     
     }
     .pokedex-footer{
         height:10px;
+        border-radius: 0 0 10px 10px;
         background-color:$pokedex_color;
     }
 }

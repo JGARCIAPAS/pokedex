@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 /* colors */
 .pokedex {
   background-color: rgb(255, 27, 27);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 710px) {
   .pokedex {
@@ -85,9 +86,82 @@
 }
 .pokedex .pokedex-body {
   background-color: rgb(226, 0, 0);
-  height: 400px;
+  padding: 10px 0px;
+}
+.pokedex .pokedex-body .buttons-zone, .pokedex .pokedex-body .top-btns {
+  display: flex;
+}
+.pokedex .pokedex-body .main-btns {
+  display: flex;
+  flex: 2;
+}
+.pokedex .pokedex-body .middle-btns {
+  flex: 5;
+  text-align: center;
+}
+.pokedex .pokedex-body .middle-btns .btn-berries button {
+  background-color: rgb(0, 152, 225);
+  border-color: rgba(0, 87, 129, 0.58);
+  border-radius: 15px;
+}
+.pokedex .pokedex-body .middle-btns .btn-pokemon button {
+  background-color: rgb(253, 38, 38);
+  border-color: rgba(189, 0, 0, 0.58);
+  border-radius: 15px;
+}
+.pokedex .pokedex-body .middle-btns .btn-pokemon, .pokedex .pokedex-body .middle-btns .btn-berries {
+  flex: 1;
+}
+.pokedex .pokedex-body .middle-btns .btn-pokemon button, .pokedex .pokedex-body .middle-btns .btn-berries button {
+  width: 50%;
+  cursor: pointer;
+}
+.pokedex .pokedex-body .middle-btns .btn-pokemon p, .pokedex .pokedex-body .middle-btns .btn-berries p {
+  font-family: "VT323", monospace;
+  margin: 0;
+}
+.pokedex .pokedex-body .right-btns, .pokedex .pokedex-body .turn-btn {
+  flex: 1;
+}
+.pokedex .pokedex-body .turn-btn {
+  text-align: center;
+  position: relative;
+}
+.pokedex .pokedex-body .turn-btn button {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pokedex .pokedex-body .turn-btn button .power-off {
+  color: rgba(255, 255, 255, 0.8);
+}
+.pokedex .pokedex-body .mini-screen div {
+  background-color: #00c30f;
+  border-radius: 5px;
+  margin: 30px auto;
+  width: 52%;
+}
+.pokedex .pokedex-body .mini-screen .blink {
+  animation: blinker 1s linear infinite;
+  font-family: "VT323", monospace;
+  padding: 15px 0px;
+}
+.pokedex .pokedex-body .mini-screen .ink-text {
+  margin: 0;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .pokedex .pokedex-footer {
   height: 10px;
+  border-radius: 0 0 10px 10px;
   background-color: rgb(255, 27, 27);
 }/*# sourceMappingURL=pokedex.css.map */
