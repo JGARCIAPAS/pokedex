@@ -15,6 +15,11 @@ const Pokedex = () =>{
     }, []);
     console.log(pokeList)
  */
+    const audio = new Audio('../public/sound/gameboy.mp3')
+    console.log(audio)
+    const turnOnOff = () =>{
+        audio.play();
+    }
     
     return(
         <div className='pokedex'>
@@ -38,7 +43,7 @@ const Pokedex = () =>{
                 <div className='buttons-zone'>
                     <div className='main-btns'>
                         <div className='turn-btn'>
-                            <button><i className="fa-solid fa-power-off power-off"></i></button>
+                            <button onClick={turnOnOff}><i className="fa-solid fa-power-off power-off"></i></button>
                         </div>
                         <div className='middle-btns'>
                             <div className='top-btns'>
