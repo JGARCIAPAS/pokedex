@@ -54,18 +54,26 @@ const Pokedex = () =>{
                             <div className='mini-screen'>
                                 <div>
                                     <div className='blink'>
-                                        <p className='ink-text'>DAMAGE DETECTED</p>
-                                        <p className='ink-text'>PAD DISABLED</p>
-                                        <p className='ink-text'>use touchscreen instead</p>
+                                        <p className='ink-text'>Oak's words echoed..."The pad is broken. Use touchscreen instead"</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='right-btns'>
-
+                        <div className='crosspiece'>
+                            <div className='cross-up'>
+                                <button><i className="fa-solid fa-caret-up arrow"></i></button>
+                            </div>
+                            <div className='cross-center'>
+                                <button><i className="fa-solid fa-caret-left arrow"></i></button>
+                                <button><i className="fa-solid fa-caret-right arrow"></i></button>
+                            </div>
+                            <div className='cross-down'>
+                                <button><i className="fa-solid fa-caret-down arrow"></i></button>
+                            </div>
+                        </div>
                     </div>
-                   
                 </div>
             </div>
             <div className='pokedex-footer'></div>  

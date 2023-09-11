@@ -87,6 +87,7 @@
 .pokedex .pokedex-body {
   background-color: rgb(226, 0, 0);
   padding: 10px 0px;
+  height: calc(100vh - 140px);
 }
 .pokedex .pokedex-body .buttons-zone, .pokedex .pokedex-body .top-btns {
   display: flex;
@@ -145,12 +146,13 @@
   background-color: #00c30f;
   border-radius: 5px;
   margin: 30px auto;
-  width: 52%;
+  width: 75%;
 }
 .pokedex .pokedex-body .mini-screen .blink {
   animation: blinker 1s linear infinite;
   font-family: "VT323", monospace;
   padding: 15px 0px;
+  margin: 0px 10px;
 }
 .pokedex .pokedex-body .mini-screen .ink-text {
   margin: 0;
@@ -159,6 +161,38 @@
   50% {
     opacity: 0;
   }
+}
+.pokedex .pokedex-body .right-btns {
+  position: relative;
+}
+.pokedex .pokedex-body .crosspiece {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pokedex .pokedex-body .crosspiece .cross-up button, .pokedex .pokedex-body .crosspiece .cross-down button, .pokedex .pokedex-body .crosspiece .cross-center button {
+  background-color: rgb(0, 0, 0);
+}
+.pokedex .pokedex-body .crosspiece .cross-up button {
+  border-bottom: rgb(0, 0, 0);
+}
+.pokedex .pokedex-body .crosspiece .cross-down button {
+  border-top: rgb(0, 0, 0);
+}
+.pokedex .pokedex-body .crosspiece .cross-center button:nth-child(2) {
+  border-left: rgb(0, 0, 0);
+}
+.pokedex .pokedex-body .crosspiece .cross-up, .pokedex .pokedex-body .crosspiece .cross-down {
+  text-align: center;
+}
+.pokedex .pokedex-body .crosspiece .cross-center {
+  background-color: rgb(0, 0, 0);
+}
+.pokedex .pokedex-body .crosspiece .cross-center button:first-child {
+  margin-right: 25px;
+}
+.pokedex .pokedex-body .crosspiece .arrow {
+  color: rgba(255, 255, 255, 0.8);
 }
 .pokedex .pokedex-footer {
   height: 10px;
