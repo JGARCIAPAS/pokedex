@@ -15,7 +15,7 @@ const Pokedex = () =>{
     }, []);
     console.log(pokeList)
  */
-    const audio = new Audio('../public/sound/gameboy.mp3')
+    const audio = new Audio('/sound/gameboy.mp3')
     console.log(audio)
     const turnOnOff = () =>{
         audio.play();
