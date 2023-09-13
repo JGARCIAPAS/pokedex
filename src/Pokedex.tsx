@@ -24,7 +24,7 @@ const Pokedex = () =>{
         setIsOn(!isOn);
         console.log(isOn);
     }
-    let classOn = isOn? 'turned-on': '';
+    const classOn = isOn? 'turned-on': '';
     console.log(classOn);
     return(
         <div className='pokedex'>

@@ -11,7 +11,9 @@ const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
                 <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
                 <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
             </div>
-            <div className='lcd'></div>
+            <div className={`lcd ${MainScreenProps.classOn}`}>
+                {/* COMPONENTE POKEDEX */}
+                </div>
             <div className='frame-bottom'>
                 <div className='turn-light'>
                     <div className={`dark-red-light big-light ${MainScreenProps.classOn}`}></div>
