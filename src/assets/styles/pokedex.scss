@@ -17,17 +17,20 @@
             align-items: left;
             justify-content: left;
             .big-light{
-                -webkit-box-shadow:0 0 20px 4px $lights_blue;
-                -moz-box-shadow: 0 0 20px 4px $lights_blue;
-                box-shadow:0 0 20px 4px $lights_blue;
                 display:inline-block;
                 margin:2px 10px;
                 height:30px;
                 width:30px;
-                background-color:$lights_blue;
+                background-color:$black;
                 border:3px solid $lights_lighted_white;
                 border-radius: 100%;
                 position:relative;
+            }
+            .big-light.turned-on{
+                -webkit-box-shadow:0 0 20px 4px $lights_blue;
+                -moz-box-shadow: 0 0 20px 4px $lights_blue;
+                box-shadow:0 0 20px 4px $lights_blue;
+                background-color:$lights_blue;
             }
             .big-light:after {
                 background-color: $white;
@@ -51,19 +54,22 @@
                     border-radius:100%;
                     margin: 0 2px;
                 }
-                .red-light{
+                .red-light, .yellow-light, .green-light{
+                    background-color:$black;
+                }
+                .red-light.turned-on{
                     -webkit-box-shadow:0 0 20px 4px $lights_red;
                     -moz-box-shadow: 0 0 20px 4px $lights_red;
                     box-shadow:0 0 20px 4px $lights_red;
                     background-color:$lights_red;
                 }
-                .yellow-light{
+                .yellow-light.turned-on{
                     -webkit-box-shadow:0 0 20px 4px $lights_yellow;
                     -moz-box-shadow: 0 0 20px 4px $lights_yellow;
                     box-shadow:0 0 20px 4px $lights_yellow;
                     background-color:$lights_yellow;
                 }
-                .green-light{
+                .green-light.turned-on{
                     -webkit-box-shadow:0 0 20px 4px $lights_green;
                     -moz-box-shadow: 0 0 20px 4px $lights_green;
                     box-shadow:0 0 20px 4px $lights_green;
@@ -152,6 +158,10 @@
                 .power-off{
                     color: $lights_lighted_white;
                 }
+                @include phone{
+                    width: 30px;
+                    height: 30px;
+                }
             }
         }
         .mini-screen{
@@ -169,6 +179,10 @@
             }
             .ink-text {
                 margin: 0;
+                color:transparent;
+            }
+            .ink-text.turned-on{
+                color:$black;
             }
             @keyframes blinker {
                 50% {
@@ -197,6 +211,7 @@
             }
             .cross-up, .cross-down{
                 text-align:center;
+                margin: -1px 0px;
             }
             .cross-center{
                 background-color:$black;
@@ -208,7 +223,6 @@
                 color:$lights_lighted_white;
             }
         }
-     
     }
     .pokedex-footer{
         height:10px;

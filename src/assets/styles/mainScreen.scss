@@ -11,11 +11,14 @@
         text-align: center;
     }
     .dark-red-light{
+        background-color: $black;
         display:inline-block;
         height:10px;
         width:10px;
         border-radius:100%;
         margin: 0px 15px;
+    }
+    .dark-red-light.turned-on{
         -webkit-box-shadow:0 0 20px 4px $lights_dark_red;
         -moz-box-shadow: 0 0 20px 4px $lights_dark_red;
         box-shadow:0 0 20px 4px $lights_dark_red;

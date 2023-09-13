@@ -1,17 +1,20 @@
 import React from "react";
 import '../assets/styles/mainScreen.css'
+interface MainScreenProps {
+    classOn: string;
+}
 
-const MainScreen = () =>{
+const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
     return(
         <div className='frame'>
             <div className='frame-top'>
-                <div className='dark-red-light'></div>
-                <div className='dark-red-light'></div>
+                <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
+                <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
             </div>
             <div className='lcd'></div>
             <div className='frame-bottom'>
                 <div className='turn-light'>
-                    <div className='dark-red-light big-light'></div>
+                    <div className={`dark-red-light big-light ${MainScreenProps.classOn}`}></div>
                 </div>
                 <div className='speaker-screen'>
                     <div className='speaker'>

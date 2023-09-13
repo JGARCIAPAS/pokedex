@@ -15,21 +15,26 @@ const Pokedex = () =>{
     }, []);
     console.log(pokeList)
  */
-    const audio = new Audio('./sound/gameboy.mp3')
-    console.log(audio)
+    const [isOn, setIsOn] = useState(false);
+
+    console.log(isOn);
+    const audio = new Audio('./sound/blink.mp3')
     const turnOnOff = () =>{
         audio.play();
+        setIsOn(!isOn);
+        console.log(isOn);
     }
-    
+    let classOn = isOn? 'turned-on': '';
+    console.log(classOn);
     return(
         <div className='pokedex'>
             <div className='pokedex-header'>
                 <div className='header-top'>
-                    <div className='big-light'></div>
+                    <div className={`big-light ${classOn}`}></div>
                     <div className='group-lights'>
-                            <div className='red-light'></div>
-                            <div className='yellow-light'></div>
-                            <div className='green-light'></div>
+                            <div className={`red-light ${classOn}`}></div>
+                            <div className={`yellow-light ${classOn}`}></div>
+                            <div className={`green-light ${classOn}`}></div>
                         </div>
                 </div>
                 <div className='header-bottom'>
@@ -39,7 +44,7 @@ const Pokedex = () =>{
                 </div>
             </div>
             <div className='pokedex-body'>
-                <MainScreen/>
+                <MainScreen classOn={classOn} />
                 <div className='buttons-zone'>
                     <div className='main-btns'>
                         <div className='turn-btn'>
@@ -59,7 +64,7 @@ const Pokedex = () =>{
                             <div className='mini-screen'>
                                 <div>
                                     <div className='blink'>
-                                        <p className='ink-text'>Oak's words echoed..."The pad is broken. Use touchscreen instead"</p>
+                                        <p className={`ink-text ${classOn}`}>Oak's words echoed..."The pad is broken. Use touchscreen instead"</p>
                                     </div>
                                 </div>
                             </div>
