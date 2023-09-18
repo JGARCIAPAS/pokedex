@@ -2,30 +2,14 @@ import React, { useEffect, useState } from "react";
 import './assets/styles/pokedex.css'
 import MainScreen from "./components/MainScreen";
 
-
-const POKE_ENDPOINT_URL = 'https://pokeapi.co/api/v2/pokemon/'
 const Pokedex = () =>{
-/*     const [pokeList, setPokeList] = useState([]);
-    const [getCompletePokemonList, setgetCompletePokemonList] = useState([]);
-    let arr:any = [];
-    useEffect(()=>{
-        fetch(POKE_ENDPOINT_URL)
-            .then(response => response.json())
-            .then(data => setPokeList(data.results))
-    }, []);
-    console.log(pokeList)
- */
     const [isOn, setIsOn] = useState(false);
-
-    console.log(isOn);
     const audio = new Audio('./sound/blink.mp3')
     const turnOnOff = () =>{
         audio.play();
         setIsOn(!isOn);
-        console.log(isOn);
     }
     const classOn = isOn? 'turned-on': '';
-    console.log(classOn);
     return(
         <div className='pokedex'>
             <div className='pokedex-header'>
@@ -64,7 +48,7 @@ const Pokedex = () =>{
                             <div className='mini-screen'>
                                 <div>
                                     <div className='blink'>
-                                        <p className={`ink-text ${classOn}`}>Oak's words echoed..."The pad is broken. Use touchscreen instead"</p>
+                                        <p className={`ink-text ${classOn}`}>Las palabras del profesor Oak resuenan: ¡Los botones del pad estan dañados, no los uses!</p>
                                     </div>
                                 </div>
                             </div>

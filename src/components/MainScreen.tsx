@@ -1,5 +1,6 @@
 import React from "react";
 import '../assets/styles/mainScreen.css'
+import Pokemons from "./Pokemons";
 interface MainScreenProps {
     classOn: string;
 }
@@ -12,7 +13,8 @@ const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
                 <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
             </div>
             <div className={`lcd ${MainScreenProps.classOn}`}>
-                {/* COMPONENTE POKEDEX */}
+                {/* COMPONENTE POKEDEX o Berrydex*/}
+                <Pokemons/>
                 </div>
             <div className='frame-bottom'>
                 <div className='turn-light'>
