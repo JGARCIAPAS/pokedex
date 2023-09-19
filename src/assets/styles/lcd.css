@@ -41,8 +41,13 @@ h1, h2, h3, p {
 }
 .poke-info .extended-info ul {
   display: flex;
-  margin: 10px 0;
+  margin: 5px 0;
   padding: 0;
+}
+@media screen and (max-width: 490px) {
+  .poke-info .extended-info ul {
+    display: inline-block;
+  }
 }
 .poke-info .extended-info li {
   list-style: none;
@@ -52,12 +57,45 @@ h1, h2, h3, p {
   color: rgb(255, 255, 255);
   border-radius: 20px;
 }
+@media screen and (max-width: 490px) {
+  .poke-info .extended-info li {
+    border: 1px solid white;
+  }
+}
 .poke-info .extended-info li:nth-child(2) {
   margin-left: 10px;
+}
+@media screen and (max-width: 490px) {
+  .poke-info .extended-info li:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+.poke-info .extended-info .data-weight, .poke-info .extended-info .data-height {
+  font-weight: 100;
 }
 
 .full-text-info {
   border-top: 2px dashed #30619f;
+  height: 125px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 490px) {
+  .full-text-info {
+    height: 100px;
+  }
+}
+
+.load-screen {
+  text-align: center;
+  padding: 20px 0px;
+}
+.load-screen .load-pokeball {
+  width: 150px;
+  animation: loading-spinner 1s linear infinite;
+}
+.load-screen .load-text {
+  color: rgb(255, 255, 255);
 }
 
 .bug {
@@ -130,16 +168,4 @@ h1, h2, h3, p {
 
 .water {
   background-color: #57A7EF;
-}
-
-.load-screen {
-  text-align: center;
-  padding: 20px 0px;
-}
-.load-screen .load-pokeball {
-  width: 150px;
-  animation: loading-spinner 1s linear infinite;
-}
-.load-screen .load-text {
-  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=lcd.css.map */

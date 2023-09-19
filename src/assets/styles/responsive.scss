@@ -8,3 +8,10 @@
         @content;
     }
 }
+@mixin phablet{
+    @media screen and (max-width: 490px){
+        @content;
+    }
+}
+
+/*58*/

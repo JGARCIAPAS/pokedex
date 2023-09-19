@@ -44,12 +44,12 @@ const Pokemons = () =>{
                         <img src={pokemon?.sprites.front_default}/>
                     </div>
                     <div className='extended-info'>
-                    <h2>Pokemon nº.{pokemon.id}</h2>
+                    <h2>Nº.{pokemon.id}</h2>
                         <ul>{pokemon.types.map(type =>(
                             <li key={type?.slot} className={type?.type.name}>{type?.type.name}</li>
                         ))}</ul>
-                        <h3>Peso: {pokemon.height/10} m</h3>
-                        <h3>Altura: {pokemon.weight/10} Kg</h3>
+                        <h3><p className='height'>Altura:</p><p className='data-height'>{pokemon.height/10} m</p></h3>
+                        <h3><p className='weight'>Peso:</p> <p className='data-weight'>{pokemon.weight/10} Kg</p></h3>
                     </div>
                 </div>
                 <div className='full-text-info'>

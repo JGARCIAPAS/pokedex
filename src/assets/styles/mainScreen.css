@@ -1,4 +1,12 @@
 /* colors */
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .frame {
   border: 1px solid rgb(0, 0, 0);
   width: 70%;
