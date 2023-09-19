@@ -1,2 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-/* colors *//*# sourceMappingURL=lcd.css.map */
+/* colors */
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.lcd {
+  font-family: "VT323", monospace;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.full-info {
+  padding: 10px;
+}
+
+.poke-info {
+  display: flex;
+  gap: 10px;
+  color: #30619f;
+}
+.poke-info .main-info, .poke-info .extended-info {
+  flex: 1;
+}
+.poke-info .main-info {
+  border-right: 2px dashed #30619f;
+}
+.poke-info .main-info h1 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.poke-info .extended-info h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
+.poke-info .extended-info ul {
+  display: flex;
+  margin: 10px 0;
+  padding: 0;
+}
+.poke-info .extended-info li {
+  list-style: none;
+  border: 1px solid white;
+  padding: 3px 10px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.poke-info .extended-info li:nth-child(2) {
+  margin-left: 10px;
+}
+
+.full-text-info {
+  border-top: 2px dashed #30619f;
+}
+
+.bug {
+  background-color: #87970C;
+}
+
+.dark {
+  background-color: #3F2F22;
+}
+
+.dragon {
+  background-color: #30619f;
+}
+
+.electric {
+  background-color: #F9C127;
+}
+
+.fairy {
+  background-color: #E49AE7;
+}
+
+.fighting {
+  background-color: #86391E;
+}
+
+.fire {
+  background-color: #EB4514;
+}
+
+.flying {
+  background-color: #A0AFF2;
+}
+
+.ghost {
+  background-color: #6361B5;
+}
+
+.grass {
+  background-color: #80C44B;
+}
+
+.ground {
+  background-color: #D6B86A;
+}
+
+.ice {
+  background-color: #9FE5FC;
+}
+
+.normal {
+  background-color: #C6C0BB;
+}
+
+.poison {
+  background-color: #944695;
+}
+
+.psychic {
+  background-color: #E65D8E;
+}
+
+.rock {
+  background-color: #B9A258;
+}
+
+.steel {
+  background-color: #B5B5C5;
+}
+
+.water {
+  background-color: #57A7EF;
+}
+
+.load-screen {
+  text-align: center;
+  padding: 20px 0px;
+}
+.load-screen .load-pokeball {
+  width: 150px;
+  animation: loading-spinner 1s linear infinite;
+}
+.load-screen .load-text {
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=lcd.css.map */

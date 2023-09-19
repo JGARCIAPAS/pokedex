@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"animations.css"}
+{"version":3,"sources":["animations.scss","animations.css"],"names":[],"mappings":"AA0BE;EACE;IACE,uBAAA;ECzBJ;ED0BE;IACE,yBAAA;ECxBJ;AACF","file":"animations.css"}

@@ -2,3 +2,123 @@
 
 @import './responsive';
 @import './vars';
+@import './animations.scss';
+
+.lcd{
+    font-family: "VT323", monospace;
+}
+h1, h2, h3, p{
+    margin:0;
+}
+.full-info{
+    padding: 10px;
+}
+.poke-info{
+    display:flex;
+    gap: 10px;
+    color: #30619f;
+    .main-info, .extended-info{
+        flex:1;
+    }
+    .main-info{
+        border-right: 2px dashed #30619f;
+        h1{
+            text-transform: capitalize;
+            font-size: 25px;
+
+        }
+    }
+    .extended-info{
+        h2{
+            font-size: 20px;
+            font-weight: 100;
+        }
+        ul{
+            display:flex;
+            margin: 10px 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            border: 1px solid white;
+            padding: 3px 10px;
+            text-transform: capitalize;
+            color: $white;
+            border-radius: 20px;
+        }
+        li:nth-child(2) {
+            margin-left: 10px;
+        }
+    }
+ 
+
+}
+.full-text-info {
+    border-top: 2px dashed #30619f;
+}
+.bug{
+    background-color: $bug;
+}
+.dark{
+    background-color: $dark;
+}
+.dragon{
+    background-color: $dragon;
+}
+.electric{
+    background-color: $electric;
+}
+.fairy{
+    background-color: $fairy;
+}
+.fighting{
+    background-color: $fighting;
+}
+.fire{
+    background-color: $fire;
+}
+.flying{
+    background-color: $flying;
+}
+.ghost{
+    background-color: $ghost;
+}
+.grass{
+    background-color: $grass;
+}
+.ground{
+    background-color: $ground;
+}
+.ice{
+    background-color: $ice;
+}
+.normal{
+    background-color: $normal;
+}
+.poison{
+    background-color: $poison;
+}
+.psychic{
+    background-color: $psychic;
+}
+.rock{
+    background-color: $rock;
+}
+.steel{
+    background-color: $steel;
+}
+.water{
+    background-color: $water;
+}
+
+.load-screen{
+    text-align: center;
+    padding: 20px 0px;
+    .load-pokeball{
+        width:150px;
+        animation: loading-spinner 1s linear infinite
+    }
+    .load-text{
+        color:$white;
+    }
+}
