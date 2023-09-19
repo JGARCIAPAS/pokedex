@@ -12,7 +12,7 @@ const Pokemons = () =>{
     const [pokemonEntry, setPokemonEntry] = useState<PokemonEntry | null>(null);
     const randomPokemonNumber = () =>{
         const rand = Math.random();
-        const range = Math.floor(rand * 1010);//151
+        const range = Math.floor(rand * 905);//151
         return range + 1;
     } 
     const randomPokemon = randomPokemonNumber();

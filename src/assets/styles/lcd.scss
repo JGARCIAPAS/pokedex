@@ -66,10 +66,11 @@ h1, h2, h3, p{
 }
 .full-text-info {
     border-top: 2px dashed #30619f;
+    color:#30619f;
     height: 125px;
     overflow-x: hidden;
     @include phablet{
-        height: 100px;
+        height: 80px;
     }
 }
 .load-screen{
@@ -139,4 +140,24 @@ h1, h2, h3, p{
     background-color: $water;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #30619f;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #30619f;
+  }
 
