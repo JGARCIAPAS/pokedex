@@ -48,7 +48,7 @@ const Pokedex = () =>{
                             <div className='mini-screen'>
                                 <div>
                                     <div className='blink'>
-                                        <p className={`ink-text ${classOn}`}>Las palabras del profesor Oak resuenan: ¡Los botones del pad estan dañados, no los uses!</p>
+                                        <p className={`ink-text ${classOn}`}>Las palabras del profesor Oak resuenan: ¡Los botones del pad estan dañados! ¡Usa el táctil!</p>
                                     </div>
                                 </div>
                             </div>

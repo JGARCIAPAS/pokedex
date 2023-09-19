@@ -140,24 +140,17 @@ h1, h2, h3, p{
     background-color: $water;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: #30619f;
     border-radius: 20px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
     background: #30619f;
-  }
+}
 

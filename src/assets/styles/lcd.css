@@ -172,23 +172,19 @@ h1, h2, h3, p {
   background-color: #57A7EF;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #30619f;
   border-radius: 20px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #30619f;
 }/*# sourceMappingURL=lcd.css.map */
