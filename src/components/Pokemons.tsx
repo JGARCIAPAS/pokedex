@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import {PokemonData, PokemonEntry} from '../interfaces/pokeinterfaces';
-import Loading from "./loading";
+import Loading from "./Loading";
 import '../assets/styles/lcd.css';
 
 const POKE_ENDPOINT_URL = 'https://pokeapi.co/api/v2/pokemon/';
