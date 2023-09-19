@@ -1,11 +1,14 @@
 import React from "react";
 import '../assets/styles/mainScreen.css'
 import Pokemons from "./Pokemons";
+import Berries from "./Berries";
 interface MainScreenProps {
     classOn: string;
+    dataType: string;
 }
 
 const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
+    console.log(MainScreenProps.dataType);
     return(
         <div className='frame'>
             <div className='frame-top'>
@@ -13,7 +16,7 @@ const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
                 <div className={`dark-red-light ${MainScreenProps.classOn}`}></div>
             </div>
             <div className={`lcd ${MainScreenProps.classOn}`}>
-                {MainScreenProps.classOn ? <Pokemons/> : ''}
+                {!MainScreenProps.classOn ? '': ( MainScreenProps.dataType === 'poke' ? <Pokemons/>: <Berries/>)}
                 </div>
             <div className='frame-bottom'>
                 <div className='turn-light'>

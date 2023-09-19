@@ -4,10 +4,17 @@ import MainScreen from "./components/MainScreen";
 
 const Pokedex = () =>{
     const [isOn, setIsOn] = useState(false);
+    const [dataType, setDataType] = useState('poke');
     const audio = new Audio('./sound/blink.mp3')
     const turnOnOff = () =>{
         audio.play();
         setIsOn(!isOn);
+    }
+    const dataPoke = ()=>{
+        setDataType('poke');
+    }
+    const dataBerri = ()=>{
+        setDataType('berri');
     }
     const classOn = isOn? 'turned-on': '';
     return(
@@ -28,7 +35,7 @@ const Pokedex = () =>{
                 </div>
             </div>
             <div className='pokedex-body'>
-                <MainScreen classOn={classOn} />
+                <MainScreen classOn={classOn} dataType={dataType}/>
                 <div className='buttons-zone'>
                     <div className='main-btns'>
                         <div className='turn-btn'>
@@ -37,11 +44,11 @@ const Pokedex = () =>{
                         <div className='middle-btns'>
                             <div className='top-btns'>
                                 <div className='btn-pokemon'>
-                                    <button></button>
+                                    <button onClick={dataPoke}></button>
                                     <p>Pokédex</p>
                                 </div>
                                 <div className='btn-berries'>
-                                    <button></button>
+                                    <button onClick={dataBerri}></button>
                                     <p>Berrydex</p>
                                 </div>
                             </div>

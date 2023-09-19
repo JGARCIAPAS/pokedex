@@ -35,8 +35,8 @@ const Pokemons = () =>{
                     <div className='main-info'>
                         <h1>{pokemon.name}</h1>
                         <div>
-                            {pokemonEntry.genera.map(genus =>(
-                                <div key={genus.language.name}>
+                            {pokemonEntry.genera.map((genus, index) =>(
+                                <div key={index}>
                                     {genus.language.name === 'es' ? <p>{genus.genus}</p> : ''}
                                 </div>  
                             ))}
@@ -53,8 +53,8 @@ const Pokemons = () =>{
                     </div>
                 </div>
                 <div className='full-text-info'>
-                    {pokemonEntry.flavor_text_entries.map(text => (
-                        <div key={text.language.name}>
+                    {pokemonEntry.flavor_text_entries.map((text, index) => (
+                        <div key={index}>
                             {text.language.name === 'es' ? <p>{text.flavor_text}</p>: ''}
                         </div>
                     ))}
