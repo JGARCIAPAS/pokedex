@@ -16,12 +16,12 @@ h1, h2, h3, p{
 .poke-info{
     display:flex;
     gap: 10px;
-    color: #30619f;
+    color: $text_lcd;
     .main-info, .extended-info{
         flex:1;
     }
     .main-info{
-        border-right: 2px dashed #30619f;
+        border-right: 2px dashed $text_lcd;
         h1{
             text-transform: capitalize;
             font-size: 25px;
@@ -65,13 +65,16 @@ h1, h2, h3, p{
     }
 }
 .full-text-info {
-    border-top: 2px dashed #30619f;
-    color:#30619f;
+    border-top: 2px dashed $text_lcd;
+    color:$text_lcd;
     height: 125px;
     overflow-x: hidden;
     @include phablet{
         height: 80px;
     }
+}
+.full-text-info.berry-text{
+    height: 160px;
 }
 .load-screen{
     text-align: center;
@@ -147,10 +150,10 @@ h1, h2, h3, p{
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: #30619f;
+    background: $text_lcd;
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #30619f;
+    background: $text_lcd;
 }
 

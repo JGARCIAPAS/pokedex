@@ -8,7 +8,6 @@ interface MainScreenProps {
 }
 
 const MainScreen: React.FC<MainScreenProps> = (MainScreenProps) =>{
-    console.log(MainScreenProps.dataType);
     return(
         <div className='frame'>
             <div className='frame-top'>

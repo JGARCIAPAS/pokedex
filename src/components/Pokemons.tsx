@@ -64,15 +64,3 @@ const Pokemons = () =>{
     )
 }
 export default Pokemons
-
-
-    /*     const [pokeList, setPokeList] = useState([]);
-    const [getCompletePokemonList, setgetCompletePokemonList] = useState([]);
-    let arr:any = [];
-    useEffect(()=>{
-        fetch(POKE_ENDPOINT_URL)
-            .then(response => response.json())
-            .then(data => setPokeList(data.results))
-    }, []);
-    console.log(pokeList)
- */

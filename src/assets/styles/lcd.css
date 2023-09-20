@@ -88,6 +88,10 @@ h1, h2, h3, p {
   }
 }
 
+.full-text-info.berry-text {
+  height: 160px;
+}
+
 .load-screen {
   text-align: center;
   padding: 20px 0px;
